@@ -1,0 +1,178 @@
+_type: export
+__export_format: 4
+__export_date: 2022-11-04T02:35:50.801Z
+__export_source: insomnia.desktop.app:v2022.6.0
+resources:
+  - _id: req_33e5b69d182d4df299844c3035de7903
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667529138684
+    created: 1667517069121
+    url: localhost:5000
+    name: get all todo list
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1667519726237
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_125c218167f34f1fa2eac61c35433f60
+    parentId: null
+    modified: 1667529290265
+    created: 1667412477505
+    name: insomnia-todo
+    description: |
+      testing url methods
+    scope: collection
+    _type: workspace
+  - _id: req_1ce0da55c9f944c28704bad84bac4764
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667529168470
+    created: 1667517085445
+    url: http://localhost:5000/todo
+    name: get a todo element
+    description: ""
+    method: GET
+    body:
+      mimeType: ""
+      text: ""
+    parameters:
+      - name: todoID
+        value: ""
+        id: pair_6bc63197205b41bebcb659f9f39b432e
+    headers:
+      - id: pair_7c8afcbc4b574508900d8c20023e0bbf
+        name: todoID
+        value: "3"
+        description: ""
+    authentication: {}
+    metaSortKey: -1667519726187
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7a3991bad6034ccd9e9ac24b7b734f24
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667529177819
+    created: 1667516279852
+    url: localhost:5000/create
+    name: create todo
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "fbrwee",
+        	"description": "kfakdffasd"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1667519726162
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_91168983ab9b4504950020c3e558d3fd
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667529193543
+    created: 1667517928228
+    url: localhost:5000/update
+    name: "update an element "
+    description: ""
+    method: PUT
+    body: {}
+    parameters:
+      - id: pair_4a2ff188ce7f46fea3a4b80a4e7e192d
+        name: todoID
+        value: ""
+        description: ""
+      - id: pair_07974968a0fd4b71a4e8891cedf61a45
+        name: title
+        value: ""
+        description: ""
+      - id: pair_a24aeea6dd544f618689d89d0f1ef95c
+        name: description
+        value: ""
+        description: ""
+    headers: []
+    authentication: {}
+    metaSortKey: -1667519726149.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_579f5261013b42e9993af64c18d2e70a
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667529198752
+    created: 1667519726137
+    url: localhost:5000/delete
+    name: delete an element
+    description: ""
+    method: DELETE
+    body: {}
+    parameters:
+      - id: pair_85980833a81d4c3ea2e988f79765bc0a
+        name: todoID
+        value: ""
+        description: ""
+    headers: []
+    authentication: {}
+    metaSortKey: -1667519726137
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_ea8225788f24365c4436e8bde3410fd318bc1b5e
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667412477518
+    created: 1667412477518
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1667412477518
+    _type: environment
+  - _id: jar_ea8225788f24365c4436e8bde3410fd318bc1b5e
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667412477522
+    created: 1667412477522
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_9d352e2f558b4bcf85e889a88ea7303d
+    parentId: wrk_125c218167f34f1fa2eac61c35433f60
+    modified: 1667412477508
+    created: 1667412477508
+    fileName: My Collection
+    contents: ""
+    contentType: yaml
+    _type: api_spec

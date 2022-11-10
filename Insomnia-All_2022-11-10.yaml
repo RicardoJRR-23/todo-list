@@ -1,0 +1,140 @@
+_type: export
+__export_format: 4
+__export_date: 2022-11-10T12:46:32.238Z
+__export_source: insomnia.desktop.app:v2022.6.0
+resources:
+  - _id: req_fac1999c99ad495a904ba3f8ea8ceac1
+    parentId: wrk_c13ded2187d94cedab3f8279b479b1e8
+    modified: 1668084264714
+    created: 1667774275595
+    url: localhost:3001/todos/1
+    name: update todo
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "",
+        	"description": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1668084189554.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_c13ded2187d94cedab3f8279b479b1e8
+    parentId: null
+    modified: 1667774261600
+    created: 1667774261600
+    name: My Collection
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_1c7cbd17dd07496f91505bf0502e17c6
+    parentId: wrk_c13ded2187d94cedab3f8279b479b1e8
+    modified: 1668084259120
+    created: 1667778987566
+    url: localhost:3001/todos
+    name: create todo
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Tomar banho",
+        	"description": "Agora"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_2eff3c7bc8e34963957980f51f179eb1
+    authentication: {}
+    metaSortKey: -1668084189567
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_021568a544734085867779e9a8508c56
+    parentId: wrk_c13ded2187d94cedab3f8279b479b1e8
+    modified: 1668084196274
+    created: 1667780059363
+    url: localhost:3001/todos
+    name: get all or one todo
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1668084189592
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6dac2662a1c84784ae6692e80d267a28
+    parentId: wrk_c13ded2187d94cedab3f8279b479b1e8
+    modified: 1668084243555
+    created: 1668084189542
+    url: localhost:3001/todos/7
+    name: Delete todo
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1668084189542
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_efe7ddcd0bd818bd97dc5c56e031c35ed1e7c7fd
+    parentId: wrk_c13ded2187d94cedab3f8279b479b1e8
+    modified: 1667774261619
+    created: 1667774261619
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1667774261619
+    _type: environment
+  - _id: jar_efe7ddcd0bd818bd97dc5c56e031c35ed1e7c7fd
+    parentId: wrk_c13ded2187d94cedab3f8279b479b1e8
+    modified: 1667774261624
+    created: 1667774261624
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_01ddeb04068f4785b16027f29416400f
+    parentId: wrk_c13ded2187d94cedab3f8279b479b1e8
+    modified: 1667774261605
+    created: 1667774261605
+    fileName: My Collection
+    contents: ""
+    contentType: yaml
+    _type: api_spec
